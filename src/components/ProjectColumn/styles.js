@@ -10,17 +10,24 @@ const styles = makeStyles((theme) => ({
       '&:first-of-type': {
           borderTop: '2px solid #e8e8e8',
       },
+      cursor: 'grab',
       borderBottom: '2px solid #e8e8e8',
       alignItems: 'center',
       [theme.breakpoints.down('xs')]: {
         flexDirection: 'column',
       },
     },
+    displayNone: {
+      display: 'none'
+    },
     projectInfo: {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
       width: '100%',
+      [theme.breakpoints.down('xs')]: {
+        alignItems: 'start'
+      },
     },
     secondaryContent: {
         width: '100%',

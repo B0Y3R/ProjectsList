@@ -39,7 +39,7 @@ const styles = makeStyles((theme) => ({
         backgroundColor: "#3D3A4F",
       },
       [theme.breakpoints.down('xs')]: {
-        top: 50,
+        top: 35,
         right: 30,
       },
     }, 

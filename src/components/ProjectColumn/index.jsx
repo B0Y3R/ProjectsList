@@ -97,7 +97,7 @@ export default function ProjectColumn({ updateProject, handleChange, editProject
     }
 
     return (
-        <Grid item xs={12} key={project.id} className={isDragging ? { display: 'none' } : classes.column} ref={ref}>
+        <Grid item xs={12} key={project.id} className={isDragging ? classes.displayNone : classes.column} ref={ref}>
             <Grid item xs={12} sm={4} className={classes.projectInfo}>
                 <img src={defaultProjectIcon} className={classes.img} alt="icon" />
                 { renderField() }
